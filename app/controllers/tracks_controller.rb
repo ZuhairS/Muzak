@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class TracksController < ApplicationController
 
   def new
     render :new
@@ -21,10 +21,14 @@ class UsersController < ApplicationController
     render :show
   end
 
-  private
+  def edit
 
-  def user_params
-    params.require(:user).permit(:email, :password)
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
 end
